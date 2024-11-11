@@ -6,6 +6,65 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+%colm {
+  display: flex;
+  flex-direction: column;
+}
+
+%wihhet {
+  width: 100%;
+  height: 100%;
+}
+
+%center {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+%but {
+  padding: 0 2px;
+  margin-left: 2%;
+  border-radius: 5px;
+  color: #285991;
+  background-color: #a7e1f3;
+  font-size: 18px;
+  border: solid 2px #3268a6;
+}
+
+%bcolor {
+  color: #8929c8;
+  border: solid 2px #8929c8;
+}
+
+
+
+
+
+
+
+
+@mixin wih ($w) {
+  width: $w;
+}
+
+@mixin whet ($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* header */
 
 header {
@@ -70,22 +129,7 @@ nav {
 
 /* личный кабинет */
 
-%colm {
-    display: flex;
-    flex-direction: column;
-  }
 
-%wihhet {
-    width: 100%;
-    height: 100%;
-  }
-
-%center {
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-}
 
 
 
@@ -99,14 +143,7 @@ nav {
 
 
 
-  @mixin wih ($w) {
-    width: $w;
-}
 
-@mixin whet ($w, $h) {
-    width: $w;
-    height: $h;
-}
 
 
 
@@ -276,6 +313,432 @@ nav {
   .vihod {
     margin-bottom: 50px;
   }
+
+
+
+/* логин и пароль */
+
+
+
+.window {
+  @extend %colm;
+  @include whet(25%, 400px);
+
+  margin: 100px auto 0 auto;
+  background-color: #4ccaf065;
+  border: solid 4px #4895EF;
+  border-radius: 10px;
+}
+
+.zag {
+  font-size: 24px;
+  height: 10%;
+  display: flex;
+  margin: 20px auto;
+}
+
+
+.wr {
+  @include whet(100%, 30px);
+
+  margin: 0 auto;
+  border-radius: 5px;
+  outline: 0;
+
+  &:focus {
+  border: solid 2px #4895EF;
+}
+
+}
+
+.sogl {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    transition: all .5;
+    color: #7209B7;
+  }
+}
+
+.sog {
+  text-align: center;
+  margin-top: 20%;
+  height: 10%;
+}
+
+
+
+.up {
+  @extend %colm;
+
+  justify-content: center;
+  height: 50%;
+  row-gap: 25%;
+}
+
+.up2 {
+  @extend %colm;
+
+  justify-content: center;
+  height: 50%;
+  row-gap: 15%;
+}
+
+
+
+
+
+
+.middle {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.but {
+  border-radius: 10px;
+  background-color: #4895EF;
+  margin: 0 auto;
+  width: 90%;
+  border: solid 3px #346fb2;
+}
+
+.txt {
+  text-align: center;
+  font-size: 22px;
+  color: #214874;
+}
+
+
+.log {
+  width: 100%;
+  border: solid 2px black;
+  border-radius: 5px;
+  height: 30px;
+  background-color: white;
+
+  align-items: center;
+  display: flex;
+
+}
+
+/*о нас*/
+
+.adr {
+  width: 50%;
+}
+
+.cobr {
+  display: flex;
+  align-items: center;
+
+  width: 50%;
+}
+
+.ad {
+  font-size: 24px;
+  color: #16354D;
+}
+
+.contact {
+  @extend %colm;
+
+  width: 30%;
+  align-items: center;
+}
+
+.cont {
+  column-gap: 3%;
+  margin: 0 0 0 50px;
+  display: flex;
+  font-weight: 600;
+  color: #7209B7;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.avi {
+  width: 70%;
+}
+
+.imgav {
+  width: 100%;
+}
+
+/* sms */
+
+
+.osn {
+  @include whet(90%, 600px);
+
+  display: flex;
+  margin: 0 auto;
+  border: solid 2px #4895EF;
+}
+
+
+.leftmenu {
+  border: solid 2px #4895EF;
+  width: 20%;
+}
+
+.iconus {
+  width: 100%;
+}
+
+.iconuser {
+  width: 15%;
+  margin-right: 5%;
+}
+
+.lmsms {
+  display: flex;
+  margin: 10% 5%;
+  align-items: center;
+}
+
+
+.zagsms {
+  margin-left: 5%;
+  padding: 3% 0;
+}
+
+
+.panel {
+  justify-content: space-around;
+  display: flex;
+  border: solid 2px #4895EF;
+  height: 10%;
+  background-color: #4ccaf0c5;
+}
+
+.osnmenu {
+  width: 80%;
+  background-color: #4ccaf065;
+  
+}
+
+.butsms {
+  align-items: center;
+  display: flex;
+  padding: 0 0.5%;
+  margin: 0.5%;
+  border-radius: 10px;
+  background-color: #7209B7;
+}
+
+.txtsms {
+  color: #ffffff;
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+}
+
+.smski {
+  @extend %colm;
+
+  padding: 2%;
+  height: 67%;
+  row-gap: 3%;
+}
+
+.wrsms {
+  height: 15%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+
+.smska1 {
+  @include whet(30%, 100%);
+
+  background-color: #4895EF;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+}
+
+
+.smska2 {
+  @include whet(30%, 100%);
+
+  background-color: #9ac2f0;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  justify-content: end;
+}
+
+.left {
+  @include whet(100%, 20%);
+}
+
+.right {
+  @include whet(100%, 20%);
+
+  display: flex;
+  justify-content: end;
+}
+
+.l {
+  padding-left: 5%;
+}
+
+.r {
+  padding: 0 5%;
+}
+
+.write {
+  @include whet(70%, 100%);
+
+  display: flex;
+  align-items: center;
+}
+
+.entr {
+  display: flex;
+  width: 10%;
+}
+
+.wrs {
+  @include whet(98%, 50%);
+}
+
+.iconsms {
+  width: 100%;
+}
+
+.kart {
+  width: 50%;
+}
+
+.kart2 {
+  width: 35%;
+}
+
+/* BLOGI */
+
+.post_B {
+  @extend %colm;
+
+  width: 70%;
+  margin-bottom: 100px;
+  border: solid 2px #4895EF;
+  background-color: #4ccaf065;
+
+
+  &_panel {
+    font-size: 20px;
+    padding: 1% 0;
+    align-items: center;
+    display: flex;
+    background-color: #4ccaf0c5;
+    padding-left: 2%;
+  }
+
+  &_txt {
+    font-size: 18px;
+    display: flex;
+    padding: 2% 0;
+  }
+
+}
+
+.panel_post_B2 {
+
+  justify-content: end;
+  font-size: 20px;
+  padding: 1% 0;
+  align-items: center;
+  display: flex;
+  background-color: #4ccaf0c5;
+  padding-right: 2%;
+}
+
+
+
+
+
+
+
+.im_p_B {
+  display: flex;
+  width: 40%;
+  margin: 2% auto;
+  justify-content: center;
+}
+
+.infa_B {
+  @extend %wihhet;
+}
+
+.text_v_poste {
+  padding-left: 1%;
+  line-height: 2;
+}
+
+
+.but_V_B {
+  padding: 0 2px;
+  margin-left: 2%;
+  border-radius: 5px;
+  color: #285991;
+  background-color: #4ccaf0c5;
+  font-size: 18px;
+  border: solid 2px #3268a6;
+
+
+  &_kom {
+    @extend %but;
+
+    &:hover {
+      @extend %bcolor;
+    }
+  }
+
+  
+
+  &_sob {
+    @extend %but;
+
+    &:hover {
+      @extend %bcolor;
+    }
+  }
+
+
+  &_like {
+    @extend %but;
+
+    &:hover {
+      @extend %bcolor;
+    }
+
+    &:focus {
+      color: #ffffff;
+      background-color: #5a0ec3;
+      border: solid 2px #1e005b;
+    }
+
+  }
+
+}
+
+
+.right_B {
+  display: flex;
+  justify-content: end;
+}
+
+
+
+
+
 
 
 

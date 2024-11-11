@@ -6,6 +6,38 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.post_B, .smski, .contact, .up2, .up, .window, .dezign, .form, .data .opis .zap, .main_li {
+  display: flex;
+  flex-direction: column;
+}
+
+.infa_B, .img_post {
+  width: 100%;
+  height: 100%;
+}
+
+.options, .posts {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.but_V_B_like, .but_V_B_sob, .but_V_B_kom {
+  padding: 0 2px;
+  margin-left: 2%;
+  border-radius: 5px;
+  color: #285991;
+  background-color: #a7e1f3;
+  font-size: 18px;
+  border: solid 2px #3268a6;
+}
+
+.but_V_B_like:hover, .but_V_B_sob:hover, .but_V_B_kom:hover {
+  color: #8929c8;
+  border: solid 2px #8929c8;
+}
+
 /* header */
 header {
   margin: 25px 0;
@@ -51,23 +83,6 @@ nav ul li a {
 }
 
 /* личный кабинет */
-.dezign, .form, .data .opis .zap, .main_li {
-  display: flex;
-  flex-direction: column;
-}
-
-.img_post {
-  width: 100%;
-  height: 100%;
-}
-
-.options, .posts {
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-}
-
 .data {
   margin: 50px 0 100px 20%;
   display: flex;
@@ -176,4 +191,339 @@ nav ul li a {
 
 .vihod {
   margin-bottom: 50px;
+}
+
+/* логин и пароль */
+.window {
+  width: 25%;
+  height: 400px;
+  margin: 100px auto 0 auto;
+  background-color: rgba(76, 202, 240, 0.3960784314);
+  border: solid 4px #4895EF;
+  border-radius: 10px;
+}
+
+.zag {
+  font-size: 24px;
+  height: 10%;
+  display: flex;
+  margin: 20px auto;
+}
+
+.wr {
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 5px;
+  outline: 0;
+}
+.wr:focus {
+  border: solid 2px #4895EF;
+}
+
+.sogl {
+  text-decoration: none;
+  color: black;
+}
+.sogl:hover {
+  transition: all 0.5;
+  color: #7209B7;
+}
+
+.sog {
+  text-align: center;
+  margin-top: 20%;
+  height: 10%;
+}
+
+.up {
+  justify-content: center;
+  height: 50%;
+  row-gap: 25%;
+}
+
+.up2 {
+  justify-content: center;
+  height: 50%;
+  row-gap: 15%;
+}
+
+.middle {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.but {
+  border-radius: 10px;
+  background-color: #4895EF;
+  margin: 0 auto;
+  width: 90%;
+  border: solid 3px #346fb2;
+}
+
+.txt {
+  text-align: center;
+  font-size: 22px;
+  color: #214874;
+}
+
+.log {
+  width: 100%;
+  border: solid 2px black;
+  border-radius: 5px;
+  height: 30px;
+  background-color: white;
+  align-items: center;
+  display: flex;
+}
+
+/*о нас*/
+.adr {
+  width: 50%;
+}
+
+.cobr {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.ad {
+  font-size: 24px;
+  color: #16354D;
+}
+
+.contact {
+  width: 30%;
+  align-items: center;
+}
+
+.cont {
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  margin: 0 0 0 50px;
+  display: flex;
+  font-weight: 600;
+  color: #7209B7;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.avi {
+  width: 70%;
+}
+
+.imgav {
+  width: 100%;
+}
+
+/* sms */
+.osn {
+  width: 90%;
+  height: 600px;
+  display: flex;
+  margin: 0 auto;
+  border: solid 2px #4895EF;
+}
+
+.leftmenu {
+  border: solid 2px #4895EF;
+  width: 20%;
+}
+
+.iconus {
+  width: 100%;
+}
+
+.iconuser {
+  width: 15%;
+  margin-right: 5%;
+}
+
+.lmsms {
+  display: flex;
+  margin: 10% 5%;
+  align-items: center;
+}
+
+.zagsms {
+  margin-left: 5%;
+  padding: 3% 0;
+}
+
+.panel {
+  justify-content: space-around;
+  display: flex;
+  border: solid 2px #4895EF;
+  height: 10%;
+  background-color: rgba(76, 202, 240, 0.7725490196);
+}
+
+.osnmenu {
+  width: 80%;
+  background-color: rgba(76, 202, 240, 0.3960784314);
+}
+
+.butsms {
+  align-items: center;
+  display: flex;
+  padding: 0 0.5%;
+  margin: 0.5%;
+  border-radius: 10px;
+  background-color: #7209B7;
+}
+
+.txtsms {
+  color: #ffffff;
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+}
+
+.smski {
+  padding: 2%;
+  height: 67%;
+  row-gap: 3%;
+}
+
+.wrsms {
+  height: 15%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.smska1 {
+  width: 30%;
+  height: 100%;
+  background-color: #4895EF;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+}
+
+.smska2 {
+  width: 30%;
+  height: 100%;
+  background-color: #9ac2f0;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  justify-content: end;
+}
+
+.left {
+  width: 100%;
+  height: 20%;
+}
+
+.right {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: end;
+}
+
+.l {
+  padding-left: 5%;
+}
+
+.r {
+  padding: 0 5%;
+}
+
+.write {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.entr {
+  display: flex;
+  width: 10%;
+}
+
+.wrs {
+  width: 98%;
+  height: 50%;
+}
+
+.iconsms {
+  width: 100%;
+}
+
+.kart {
+  width: 50%;
+}
+
+.kart2 {
+  width: 35%;
+}
+
+/* BLOGI */
+.post_B {
+  width: 70%;
+  margin-bottom: 100px;
+  border: solid 2px #4895EF;
+  background-color: rgba(76, 202, 240, 0.3960784314);
+}
+.post_B_panel {
+  font-size: 20px;
+  padding: 1% 0;
+  align-items: center;
+  display: flex;
+  background-color: rgba(76, 202, 240, 0.7725490196);
+  padding-left: 2%;
+}
+.post_B_txt {
+  font-size: 18px;
+  display: flex;
+  padding: 2% 0;
+}
+
+.panel_post_B2 {
+  justify-content: end;
+  font-size: 20px;
+  padding: 1% 0;
+  align-items: center;
+  display: flex;
+  background-color: rgba(76, 202, 240, 0.7725490196);
+  padding-right: 2%;
+}
+
+.im_p_B {
+  display: flex;
+  width: 40%;
+  margin: 2% auto;
+  justify-content: center;
+}
+
+.text_v_poste {
+  padding-left: 1%;
+  line-height: 2;
+}
+
+.but_V_B {
+  padding: 0 2px;
+  margin-left: 2%;
+  border-radius: 5px;
+  color: #285991;
+  background-color: rgba(76, 202, 240, 0.7725490196);
+  font-size: 18px;
+  border: solid 2px #3268a6;
+}
+.but_V_B_like:focus {
+  color: #ffffff;
+  background-color: #5a0ec3;
+  border: solid 2px #1e005b;
+}
+
+.right_B {
+  display: flex;
+  justify-content: end;
 }/*# sourceMappingURL=style2.css.map */
